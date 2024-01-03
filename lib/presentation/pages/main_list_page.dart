@@ -28,7 +28,7 @@ class _MainListPagePageState extends State<MainListPage> {
               title: "Dummy UI",
               subTitle: "Introducing Flutter UI",
               onTap: () {
-                context.router.push(const DummyRoute());
+                context.router.push(const DummyMainRoute());
               },
             )),
             ListItemMain(

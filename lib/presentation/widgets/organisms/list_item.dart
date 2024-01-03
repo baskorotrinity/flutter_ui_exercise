@@ -30,11 +30,19 @@ class ListItem extends StatelessWidget {
     );
 
     return Container(
+        margin: EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(color: Colors.grey, spreadRadius: 1),
+          ],
+        ),
         child: ListTile(
-      contentPadding: EdgeInsets.all(10),
-      leading: leadingItem,
-      title: rightItem,
-      onTap: () {},
-    ));
+          contentPadding: EdgeInsets.all(10),
+          leading: leadingItem,
+          title: rightItem,
+          onTap: () {},
+        ));
   }
 }
